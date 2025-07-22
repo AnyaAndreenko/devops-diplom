@@ -4,6 +4,3 @@ variable "folder_id" {}
 variable "bucket_name" {
   default = "my-tf-state-bucket"
 }
-variable "service_account_key_file"  {
-    default =  "~/authorized_key.json"
-}

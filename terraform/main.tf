@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "yandex" {
-  service_account_key_file = file("~/authorized_key.json" )
+  service_account_key_file = var.service_account_key_file
   cloud_id  = var.cloud_id
   folder_id = var.folder_id
   access_key = var.access_key
@@ -18,7 +18,5 @@ provider "yandex" {
 
 resource "yandex_storage_bucket" "tf_state" {
   bucket     = "my-tf-state-bucket"
-  access_key = var.access_key
-  secret_key = var.secret_key
   acl        = "private"
 }

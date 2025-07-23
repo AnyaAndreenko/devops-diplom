@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
     endpoint                    = "storage.yandexcloud.net"
-    bucket                      = "tf-state-irina-devops-20250720" # замени на свой!
-    region                      = "ru-central1"
+    bucket                      = "my-tf-state-bucket-andreenkoanya" 
+    region                      = "ru-central1-a"
     key                         = "terraform.tfstate"
     access_key                  = null
     secret_key                  = null

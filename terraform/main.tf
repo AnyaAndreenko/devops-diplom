@@ -16,5 +16,5 @@ provider "yandex" {
 
 resource "yandex_storage_bucket" "tf_state" {
   bucket     = "my-tf-state-bucket"
-  acl        = "private"
+  
 }
